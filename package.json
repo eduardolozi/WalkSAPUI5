@@ -1,11 +1,8 @@
 {
   "name": "walksap",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Introdução ao sapUI5",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+    "start": "ui5 serve -o index.html"
+  }
 }
