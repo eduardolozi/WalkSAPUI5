@@ -4,5 +4,8 @@
   "description": "Introdução ao sapUI5",
   "scripts": {
     "start": "ui5 serve -o index.html"
+  },
+  "devDependencies": {
+    "@ui5/cli": "^3.7.2"
   }
 }
