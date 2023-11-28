@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI5 WalkThrough</title>
+	<meta charset="utf-8">
+	<title>UI5 Walkthrough</title>
+	<script
+		id="sap-ui-bootstrap"
+		src="resources/sap-ui-core.js"
+		data-sap-ui-theme="sap_horizon"
+		data-sap-ui-libs="sap.m"
+		data-sap-ui-compatVersion="edge"
+		data-sap-ui-async="true"
+		data-sap-ui-onInit="module:WALKSAP/index"
+		data-sap-ui-resourceroots='{
+			"WALKSAP": "./"
+		}'>
+
+	</script>
 </head>
 <body>
-    <div>Olá Mundo</div>
+<div class="sapUiBody" id="content"></div>
 </body>
 </html>
