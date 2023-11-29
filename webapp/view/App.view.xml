@@ -10,10 +10,10 @@
                     <content>
                         <!--chamamos uma view para a parte do Panel-->
                         <mvc:XMLView viewName="WALKSAP.view.HelloPanel"/>
+                        <mvc:XMLView viewName="WALKSAP.view.InvoiceList"/>
                     </content>
                 </Page>
             </pages>
         </App>
     </Shell>
 </mvc:View>
-
