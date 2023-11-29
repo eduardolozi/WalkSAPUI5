@@ -1,16 +1,19 @@
 <mvc:View
     controllerName="WALKSAP.controller.App"
     xmlns="sap.m"
-    xmlns:mvc="sap.ui.core.mvc">
-    <Button
-        text="S{i18n>showHelloButtonText}"
-        press=".onShowHello"
-    />
-    <Input
-        value="{/recipient/name}"
-        description="Hello {/recipient/name}"
-        valueLiveUpdate="true"
-        width="60%"
-    />
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Shell>
+        <App class="myAppDemoWT">
+            <pages>
+                <Page title="{i18n>homePageTitle}">
+                    <content>
+                        <!--chamamos uma view para a parte do Panel-->
+                        <mvc:XMLView viewName="WALKSAP.view.HelloPanel"/>
+                    </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
 </mvc:View>
 

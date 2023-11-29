@@ -6,18 +6,17 @@
 	<script
 		id="sap-ui-bootstrap"
 		src="resources/sap-ui-core.js"
-		data-sap-ui-theme="sap_horizon"
-		data-sap-ui-libs="sap.m"
+		data-sap-ui-theme="sap_horizon_dark"
 		data-sap-ui-compatVersion="edge"
 		data-sap-ui-async="true"
-		data-sap-ui-onInit="module:WALKSAP/index"
+		data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
 		data-sap-ui-resourceroots='{
 			"WALKSAP": "./"
 		}'>
 
 	</script>
 </head>
-<body>
-<div class="sapUiBody" id="content"></div>
+<body class="sapUiBody" id="content">
+    <div data-sap-ui-component data-name="WALKSAP" data-id="container" data-settings='{"id" : "WALKSAP"}'></div>
 </body>
 </html>
