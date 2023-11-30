@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Introdução ao sapUI5",
   "scripts": {
-    "start": "ui5 serve -o index.html"
+    "start": "ui5 serve -o test/mockServer.html"
   },
   "devDependencies": {
-    "@ui5/cli": "^3.7.2"
+    "@ui5/cli": "^3.7.2",
+    "ui5-middleware-simpleproxy": "^3.2.8"
   }
 }

@@ -4,16 +4,9 @@
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true">
     <Shell>
-        <App class="myAppDemoWT">
-            <pages>
-                <Page title="{i18n>homePageTitle}">
-                    <content>
-                        <!--chamamos uma view para a parte do Panel-->
-                        <mvc:XMLView viewName="WALKSAP.view.HelloPanel"/>
-                        <mvc:XMLView viewName="WALKSAP.view.InvoiceList"/>
-                    </content>
-                </Page>
-            </pages>
-        </App>
+        <!-- Devido ao routing, agora a App.view estar vazia. No entanto ela vai servir para receber as views que estiverem na url. Isso pois no manifest.json nós colocamos que a tag App iria ser a que ia fazer o display das views. -->
+        <App
+            class="myAppDemoWT"
+            id="app"/>
     </Shell>
 </mvc:View>

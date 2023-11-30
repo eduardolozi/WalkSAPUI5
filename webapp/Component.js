@@ -28,6 +28,9 @@ sap.ui.define([
             const oModel = new JSONModel(oData);
             this.setModel(oModel);
             //-----------------------------------------------------------------------------
+
+            // Criamos as views baseadas na url (devido ao routing feito no manifest.json)
+			this.getRouter().initialize();
         }
     });
 });
