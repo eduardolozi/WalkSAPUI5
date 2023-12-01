@@ -1,0 +1,12 @@
+<mvc:View
+    controllerName="WALKSAP.controller.App"
+    xmlns="sap.m"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true">
+    <Shell>
+        <!-- Devido ao routing, agora a App.view estar vazia. No entanto ela vai servir para receber as views que estiverem na url. Isso pois no manifest.json nós colocamos que a tag App iria ser a que ia fazer o display das views. -->
+        <App
+            class="myAppDemoWT"
+            id="app"/>
+    </Shell>
+</mvc:View>
