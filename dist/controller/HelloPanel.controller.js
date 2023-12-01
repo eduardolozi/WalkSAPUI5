@@ -1,2 +1,0 @@
-sap.ui.define(["sap/ui/core/mvc/Controller","sap/m/MessageToast"],(e,o)=>{"use strict";return e.extend("WALKSAP.controller.HelloPanel",{onShowHello(){const e=this.getView().getModel("i18n").getResourceBundle();const t=this.getView().getModel().getProperty("/recipient/name");const l=e.getText("helloMsg",[t]);o.show(l)},onOpenDialog(){this.pDialog??=this.loadFragment({name:"WALKSAP.view.HelloDialog"});this.pDialog.then(e=>e.open())},onCloseDialog(){this.byId("helloDialog").close()}})});
-//# sourceMappingURL=HelloPanel.controller.js.map
